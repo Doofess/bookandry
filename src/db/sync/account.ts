@@ -15,8 +15,8 @@ import { requeueEverything } from './rotate';
  * only by its signed-in owner), so there is nothing for a person to type,
  * keep or decide: the first device makes the key, every other device fetches
  * it. Records are still sealed with it and ids still blinded, but the key's
- * protection is the account's sign-in. The README's threat model says what
- * that means.
+ * protection is the account's sign-in. The threat model in
+ * docs/sync-and-security.md says what that means.
  *
  * The raw key exists in memory only inside these functions, long enough to
  * derive the non-extractable working keys, and is zeroed on the way out.

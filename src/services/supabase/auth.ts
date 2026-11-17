@@ -68,7 +68,7 @@ export function returnUrl(): string {
 
 /**
  * A new account. With email confirmation on (it must be - see the setup
- * checklist in the README), no session comes back: the person confirms
+ * checklist in docs/deploy.md), no session comes back: the person confirms
  * from their inbox first.
  */
 export async function signUpWithEmail(

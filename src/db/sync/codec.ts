@@ -106,7 +106,8 @@ function recordAad(userId: string, rid: string, rev: string, keyVersion: number)
  * rid or another user, or relabels its key version, produces a record that
  * fails to open.
  *
- * What it cannot buy, and the README says so: a server can still WITHHOLD
+ * What it cannot buy, and docs/sync-and-security.md says so: a server can
+ * still WITHHOLD
  * records, or replay an older authentic one. Replay is harmless here - a rev
  * no newer than what the device holds is skipped by the engine - but
  * withholding is undetectable without a global log, which this does not have.

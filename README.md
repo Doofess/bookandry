@@ -67,7 +67,7 @@ The rest, including integer money and hand-written date maths, is in [docs/desig
 - A fast-check property test runs 150 random histories of edits, deletes and syncs on two devices and checks that both devices and the server end identical.
 - 25 Playwright spec files with 135 `test(` calls, in English, Hebrew and mobile projects. One kills the preview server and checks the app still shows its data; one seeds 4,000 rows under a 4x CPU throttle.
 - axe checks 19 route, language and theme combinations against WCAG 2.2 AA; 11 fail on any violation, 8 report.
-- Coverage thresholds: 100% for the money, date and recurrence modules, 60% overall.
+- Coverage thresholds: 100% for the money, date and recurrence modules, 60% overall (55% for branches).
 - Custom gates ban physical-direction CSS classes, float maths on money, and card numbers in source.
 - CI ([`verify.yml`](.github/workflows/verify.yml)) runs typecheck, ESLint with zero warnings, Prettier, the gates, Vitest with coverage and a production build on every pull request and push to `main`. Playwright and Lighthouse run locally through `pnpm verify:full`, not in CI.
 
@@ -96,7 +96,7 @@ For accounts and sync, set `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` 
 
 ## Status
 
-No active development since October 2026. Sharing files into the installed app works on Android only. Not built: bank connections (parked; a licence is needed), revolving credit, catalog fees for bank-issued cards (a card's fee can be typed in), CPI-linked loans and per-account balances.
+No active development since October 2026. Sharing files into the installed app works on Android only. Not built: bank connections (parked; a licence is needed), revolving credit, catalog fees for bank-issued cards (a card's fee can be typed in), CPI-linked loans and per-account balances. Known limitations are listed in [docs/known-limitations.md](docs/known-limitations.md).
 
 ## How it was built
 

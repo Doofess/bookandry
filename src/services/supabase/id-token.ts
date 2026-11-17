@@ -23,7 +23,7 @@ import { randomBytes, sha256Hex, toBase64Url } from '@/services/crypto/bytes';
 
 /**
  * Where Google sends the person back. Registered on the Google OAuth client
- * (see the README's checklist): changing it breaks signing in until it is
+ * (see the checklist in docs/deploy.md): changing it breaks signing in until it is
  * registered again.
  */
 export const CALLBACK_PATH = '/auth/callback';

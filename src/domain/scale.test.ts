@@ -12,7 +12,8 @@ import { d, makeTx } from './test-factories';
 /**
  * The performance claim, at the size it is actually claimed about.
  *
- * The README says 5,000 transactions across ten years of monthly series is
+ * docs/design-decisions.md says 5,000 transactions across ten years of monthly
+ * series is
  * ~600,000 occurrence objects, and that the answer is to REFUSE to compute them
  * rather than to compute them faster. Everything else in the suite runs at a
  * few dozen rows, where that distinction cannot fail: a design that expanded
@@ -63,7 +64,7 @@ describe('the feed at ten years and five thousand series', () => {
      *
      * Building the real 600,000 objects here would cost the very 90-150MB the
      * design exists to avoid, inside a test runner, to prove a number nobody
-     * disputes. What matters is that the per-series figure is what the README
+     * disputes. What matters is that the per-series figure is what that document
      * claims - if a decade of monthly recurrence stopped yielding ~120
      * occurrences, the premise would have quietly changed.
      */
