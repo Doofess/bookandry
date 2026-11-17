@@ -1,13 +1,13 @@
 # Bookandry
 
-Local-first personal money manager: multi-profile, multi-currency, English and Hebrew with full RTL, account-backed with a full offline copy per device. Money is integer minor units from a frozen ISO 4217 table; dates are `"YYYY-MM-DD"` string maths with no date library. `README.md` is the source of truth; this file only points into it.
+Local-first personal money manager: multi-profile, multi-currency, English and Hebrew with full RTL, account-backed with a full offline copy per device. Money is integer minor units from a frozen ISO 4217 table; dates are `"YYYY-MM-DD"` string maths with no date library. `README.md` and the documents under `docs/` are the source of truth; this file only points into them.
 
 ## Where to look
 
-- Architecture, the three memo layers, money and date rules: `README.md` → "Architecture".
-- Why things are the way they are: `README.md` → "Design decisions" and "Non-goals". Check before proposing a change that touches them.
-- File layout: `README.md` → "Code map". Features live in `src/features/<name>/`, pure logic in `src/domain/`.
-- Auth, Supabase, threat model: `README.md` → "Accounts".
+- Architecture, the three memo layers, money and date rules: `docs/design-decisions.md` → "Architecture".
+- Why things are the way they are: `docs/design-decisions.md` → "Design decisions" and "Non-goals". Check before proposing a change that touches them.
+- Layout of the sync, crypto and account code: `docs/sync-and-security.md` → "Code map". Features live in `src/features/<name>/`, pure logic in `src/domain/`.
+- Auth, Supabase, threat model: `docs/sync-and-security.md` → "Accounts" and "Threat model".
 - Background research (card issuers, interest rules): `docs/research/`.
 - Specs and plans from earlier sessions: `docs/superpowers/`.
 
@@ -19,7 +19,7 @@ Local-first personal money manager: multi-profile, multi-currency, English and H
 
 ### Issue tracker
 
-GitHub Issues on `Doofess/Bookandry` via `gh`. See `docs/agents/issue-tracker.md`.
+GitHub Issues on `Doofess/bookandry` via `gh`. See `docs/agents/issue-tracker.md`.
 
 ### Triage labels
 

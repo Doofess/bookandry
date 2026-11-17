@@ -24,7 +24,7 @@ import { completeFirstRun } from './support/seed';
  * omnibox install icon. Headless Chromium never fires it, so the assertion would
  * only ever skip - and a spec that skips is worse than an absent one, because it
  * reads as coverage. The install click itself is browser chrome, and stays in
- * the README's manual pass.
+ * the manual pass in docs/testing.md.
  */
 
 /*

@@ -7,7 +7,7 @@
  *   public/email/header.png - the mark and the name, in the brand's face
  *   public/email/band.png   - the engraved bands from the front door's panel
  *   supabase/templates/*.html - one file per email, pasted into the dashboard
- *     (Authentication -> Emails -> Templates); subjects in the README
+ *     (Authentication -> Emails -> Templates); subjects in docs/deploy.md
  *
  * Images are served from bookandry.com, so a deploy must go out before the
  * templates are pasted. Colours come from src/index.css, so the emails follow

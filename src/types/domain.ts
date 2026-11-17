@@ -381,12 +381,13 @@ export type Recurrence =
        * Which KIND of plan, which is a distinction Israeli cards make and no
        * amount of arithmetic can recover.
        *
-       * תשלומים and קרדיט split a purchase the same way; the difference is that
-       * קרדיט carries interest and תשלומים does not - a regular instalment plan
-       * is a credit plan at zero interest. The app does not model the interest
-       * itself (see README), so the stored split is identical either way, but
-       * which one the user chose is theirs to see on the row rather than
-       * something the app quietly forgets.
+       * תשלומים and קרדיט split a purchase the same way; the difference is
+       * that קרדיט carries interest and תשלומים does not - a regular
+       * instalment plan is a credit plan at zero interest. The app does not
+       * model the interest itself (see docs/design-decisions.md), so the
+       * stored split is identical either way, but which one the user chose is
+       * theirs to see on the row rather than something the app quietly
+       * forgets.
        *
        * Absent on rows written before the distinction existed, which are
        * תשלומים by construction: it was the only plan the form could make.

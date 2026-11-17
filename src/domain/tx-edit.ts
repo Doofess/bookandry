@@ -45,8 +45,9 @@ export function scopeAllowsMove(scope: EditScope): boolean {
  * Changing the count or the total would have to re-split the payments AND
  * rewrite the first-occurrence remainder override in step, or the plan stops
  * summing to its total - the one invariant תשלומים has. Rather than offer an
- * editor that breaks it, the mode is shown read-only and the README says to
- * delete and re-add. An honest limitation beats a half-working control.
+ * editor that breaks it, the mode is shown read-only and
+ * docs/known-limitations.md says to delete and re-add. An honest limitation
+ * beats a half-working control.
  *
  * Editing a plan's payments (their amount, on one payment or all of them)
  * leaves its recurrence alone, `reset.principalMinor` included: the reset at
