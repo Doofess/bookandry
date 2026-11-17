@@ -62,7 +62,7 @@ The rest, including integer money and hand-written date maths, is in [docs/desig
 
 ## Testing and quality
 
-- 242 test files under `src/` with 3,018 `it(` and `test(` cases plus 98 `it.each` tables, counted by grep. 94 of the files are React component tests.
+- 242 test files under `src/` with 3,018 `it(` and `test(` cases plus 99 `it.each` tables, counted by grep. 94 of the files are React component tests.
 - 8 test files run the SQL migrations on Postgres in-process (PGlite): grants, row-level security, and two devices syncing through the codec.
 - A fast-check property test runs 150 random histories of edits, deletes and syncs on two devices and checks that both devices and the server end identical.
 - 25 Playwright spec files with 135 `test(` calls, in English, Hebrew and mobile projects. One kills the preview server and checks the app still shows its data; one seeds 4,000 rows under a 4x CPU throttle.

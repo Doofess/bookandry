@@ -13,13 +13,13 @@ pnpm install
 pnpm dev             # http://localhost:5173
 ```
 
-| Command                  | What it does                                                               |
-| ------------------------ | -------------------------------------------------------------------------- |
-| `pnpm verify`            | typecheck, lint, format, the three gates, tests + coverage, build          |
-| `pnpm verify:full`       | the above plus a hostile-timezone run, knip, and the full Playwright suite |
-| `pnpm test`              | unit, db and dom projects                                                  |
-| `pnpm test:e2e`          | Playwright, against real builds: local-only (4173) and production (4174)   |
-| `pnpm exec lhci autorun` | Lighthouse, four routes, median of three runs                              |
+| Command                  | What it does                                                                          |
+| ------------------------ | ------------------------------------------------------------------------------------- |
+| `pnpm verify`            | typecheck, lint, format, the three gates, tests + coverage, build                     |
+| `pnpm verify:full`       | the above plus a hostile-timezone run, knip, the full Playwright suite and Lighthouse |
+| `pnpm test`              | unit, db and dom projects                                                             |
+| `pnpm test:e2e`          | Playwright, against real builds: local-only (4173) and production (4174)              |
+| `pnpm exec lhci autorun` | Lighthouse, four routes, median of three runs                                         |
 
 `pnpm verify` is the gate at every phase boundary. `verify:full` is slower and
 runs at the checkpoints.
