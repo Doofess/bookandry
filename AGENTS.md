@@ -6,7 +6,7 @@ Local-first personal money manager: multi-profile, multi-currency, English and H
 
 - Architecture, the three memo layers, money and date rules: `docs/design-decisions.md` → "Architecture".
 - Why things are the way they are: `docs/design-decisions.md` → "Design decisions" and "Non-goals". Check before proposing a change that touches them.
-- File layout: `docs/sync-and-security.md` → "Code map". Features live in `src/features/<name>/`, pure logic in `src/domain/`.
+- Layout of the sync, crypto and account code: `docs/sync-and-security.md` → "Code map". Features live in `src/features/<name>/`, pure logic in `src/domain/`.
 - Auth, Supabase, threat model: `docs/sync-and-security.md` → "Accounts" and "Threat model".
 - Background research (card issuers, interest rules): `docs/research/`.
 - Specs and plans from earlier sessions: `docs/superpowers/`.

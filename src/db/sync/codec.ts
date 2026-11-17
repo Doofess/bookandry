@@ -107,10 +107,10 @@ function recordAad(userId: string, rid: string, rev: string, keyVersion: number)
  * fails to open.
  *
  * What it cannot buy, and docs/sync-and-security.md says so: a server can
- * still WITHHOLD
- * records, or replay an older authentic one. Replay is harmless here - a rev
- * no newer than what the device holds is skipped by the engine - but
- * withholding is undetectable without a global log, which this does not have.
+ * still WITHHOLD records, or replay an older authentic one. Replay is harmless
+ * here - a rev no newer than what the device holds is skipped by the engine -
+ * but withholding is undetectable without a global log, which this does not
+ * have.
  */
 export function encryptingTransport(inner: EncryptedTransport, options: CodecOptions): SyncTransport {
   return {
