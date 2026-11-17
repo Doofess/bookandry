@@ -1,6 +1,6 @@
 # Bookandry
 
-Local-first personal money manager: multi-profile, multi-currency, English and Hebrew with full RTL, account-backed with a full offline copy per device. Money is integer minor units from a frozen ISO 4217 table; dates are `"YYYY-MM-DD"` string maths with no date library. `README.md` is the source of truth; this file only points into it.
+Local-first personal money manager: multi-profile, multi-currency, English and Hebrew with full RTL, account-backed with a full offline copy per device. Money is integer minor units from a frozen ISO 4217 table; dates are `"YYYY-MM-DD"` string maths with no date library. `README.md` and the documents under `docs/` are the source of truth; this file only points into them.
 
 ## Where to look
 
