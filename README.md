@@ -100,7 +100,7 @@ No active development since October 2026. Sharing files into the installed app w
 
 ## How it was built
 
-Built with AI coding agents (Claude Code).
+Built with AI coding agents.
 
 ## License
 
